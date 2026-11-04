@@ -1,0 +1,211 @@
+/* Feuille de style du rapport KDou */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+.page-site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.haut-de-page {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #0b2d5c;
+  border-bottom: 3px solid #1f4e89;
+  padding: 10px 16px;
+}
+
+.ligne-haut {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.titre-site {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.sous-titre-site {
+  margin: 2px 0 0 0;
+  font-size: 12px;
+  color: #c5d6f0;
+}
+
+.barre-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.lien-menu {
+  color: #dce8f8;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 10px;
+  border: 1px solid #2b5ea0;
+  background-color: #123a70;
+}
+
+.lien-menu:hover {
+  background-color: #1a4c8c;
+  color: #ffffff;
+}
+
+.lien-actif {
+  background-color: #e8eef7;
+  color: #0b2d5c;
+  font-weight: bold;
+}
+
+.corps-page {
+  flex: 1;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px 40px 16px;
+  box-sizing: border-box;
+}
+
+.corps-page a {
+  color: #8eb4e8;
+}
+
+.pied-de-page {
+  background-color: #0b2d5c;
+  color: #d5e2f5;
+  padding: 14px 16px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.titre-page {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  color: #8eb4e8;
+}
+
+.texte-intro {
+  line-height: 1.5;
+  max-width: 720px;
+  margin-bottom: 22px;
+}
+
+.liste-groupe {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.carte-membre {
+  background-color: #242424;
+  border: 1px solid #3a3a3a;
+  border-left: 6px solid #0b2d5c;
+  width: 230px;
+  padding: 16px;
+}
+
+.nom-membre {
+  margin: 0;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.role-membre {
+  margin: 8px 0 0 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.bloc-question {
+  background-color: #242424;
+  border: 1px solid #3a3a3a;
+  margin-bottom: 28px;
+  padding: 16px;
+}
+
+.titre-question {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  color: #9ec0ea;
+}
+
+.texte-question {
+  line-height: 1.5;
+  margin: 0 0 14px 0;
+}
+
+.petit-titre {
+  margin: 16px 0 6px 0;
+  font-size: 15px;
+  color: #8eb4e8;
+}
+
+.grille-cases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.case-image {
+  min-width: 280px;
+  flex: 1;
+  min-height: 180px;
+  border: 2px dashed #4a6fa3;
+  background-color: #161616;
+  color: #8aa0c0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.texte-case {
+  margin: 0;
+  font-size: 14px;
+}
+
+.photo-capture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sommaire-questions {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 700px) {
+  .titre-page {
+    font-size: 22px;
+  }
+
+  .carte-membre {
+    width: 100%;
+  }
+
+  .lien-menu {
+    font-size: 13px;
+  }
+}
